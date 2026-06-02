@@ -1,9 +1,10 @@
 """Health check routes."""
 
-from flask import Blueprint, jsonify
+from flask import Blueprint
+from app.utils.response_utils import success_response
 
-health_bp = Blueprint("health", __name__)
+health_bp = Blueprint("health_bp", __name__)
 
-@health_bp.route("/health", methods=["GET"])
+@health_bp.route("/api/health", methods=["GET"])
 def health_check():
-    return jsonify({"status": "ok"})
+    return success_response("Backend is running successfully")

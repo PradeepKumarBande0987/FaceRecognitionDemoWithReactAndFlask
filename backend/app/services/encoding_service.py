@@ -1,5 +1,4 @@
 """Encoding service."""
 
-class EncodingService:
-    def encode_face(self, image_data):
-        return []
+def encoding_service():
+    return {"message": "Encoding service will be implemented later"}

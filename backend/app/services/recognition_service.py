@@ -1,5 +1,4 @@
 """Recognition service."""
 
-class RecognitionService:
-    def recognize(self, image_data):
-        return None
+def recognition_service():
+    return {"message": "Recognition service will be implemented later"}

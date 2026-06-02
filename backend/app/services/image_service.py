@@ -1,5 +1,6 @@
 """Image processing service."""
 
-class ImageService:
-    def process_image(self, image_data):
-        return image_data
+def image_service(filename):
+    allowed_extensions = {"png", "jpg", "jpeg"}
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in allowed_extensions
+

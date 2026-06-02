@@ -1,0 +1,11 @@
+name: face_demo_env
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - flask
+      - flask-cors
+      - flask-sqlalchemy
+      - python-dotenv

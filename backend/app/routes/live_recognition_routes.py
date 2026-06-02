@@ -1,9 +1,10 @@
 """Live recognition routes."""
 
-from flask import Blueprint, jsonify
+from flask import Blueprint
+from app.utils.response_utils import success_response
 
-live_recognition_bp = Blueprint("live_recognition", __name__)
+live_recognition_bp = Blueprint("live_recognition_bp", __name__)
 
-@live_recognition_bp.route("/recognize", methods=["POST"])
+@live_recognition_bp.route("/api/recognize", methods=["POST"])
 def recognize_live():
-    return jsonify({"message": "live recognition endpoint"})
+    return success_response("live recognition endpoint")
