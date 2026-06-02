@@ -1,0 +1,11 @@
+.layout {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  color: #1f2937;
+}
+
+.layout-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
